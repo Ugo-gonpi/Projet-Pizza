@@ -19,7 +19,7 @@ const ProjetDetails = () => {
 
                             <p className='text-black text-[40px] mb-[10px] font-bold underline italic'>{element.name}</p>
 
-                            <Link to={'/'}>
+                            <Link to={'/Projet-Pizza'}>
 
                                 <img src={element.img} alt="" className='w-[400px] h-[400px] rounded-[50%] hover:brightness-110'/>
 
