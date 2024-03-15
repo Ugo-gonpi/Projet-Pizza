@@ -16,7 +16,7 @@ const ProjetMain = () => {
         <div className='w-full h-[75%] bg-white flex justify-center items-center flex-wrap flex-row gap-5 bg-[url("./assets/bg-pizza.jpg")] bg-no-repeat bg-cover'>
             {data.map((element, key)=> {
                 return (
-                    <div key={key} className='w-[270px] h-[220px] bg-orange-400 rounded-[10px] flex items-center flex-col shadow-2xl'>
+                    <div key={key} className='w-[250px] h-[220px] bg-orange-400 rounded-[10px] flex items-center flex-col shadow-2xl'>
 
                         <Link className='w-full h-[100px] flex justify-center items-center mt-[5px]' to={`/details/${key}`}>
                             <img src={new URL(`../assets/${element.img}`, import.meta.url).href} alt="" className='w-[70%] h-full rounded-[50%] hover:brightness-110'/>
