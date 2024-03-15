@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Margherita",
+        "ingredients": "tomato sauce, cheese, basil, olive oil",
+        "prix": 14,
+        "img": "/src/assets/margherita-pizza.jpg"
+    },
+    {
+        "name": "Diavola",
+        "ingredients": "tomato sauce, salami, chili peppers, basil, cheese",
+        "prix": 20,
+        "img": "/src/assets/pizza-diavola.jpg"
+    },
+    {
+        "name": "Bismarck",
+        "ingredients": "tomato sauce, potato, cheese, mushrooms, egg, ham, pepper",
+        "prix": 17,
+        "img": "/src/assets/bismarck-pizza.jpg"
+    },
+    {
+        "name": "Veggie",
+        "ingredients": "tomato sauce, spinach, cheese, artichoke, pepper, onion, tomatoes, olives, almonds",
+        "prix": 21,
+        "img": "/src/assets/veggie-pizza.webp"
+    },
+    {
+        "name": "Calzone",
+        "ingredients": "tomato sauce, cheese, ham, bacon",
+        "prix": 20,
+        "img": "/src/assets/calzone-pizza.jpg"
+    },
+    {
+        "name": "Quattro Stagionni",
+        "ingredients": "tomato sauce, basil, artichoke, cheese, mushrooms, red pepper, onion, potato",
+        "prix": 19,
+        "img": "/src/assets/quattro-stagioni.jpg"
+    },
+    {
+        "name": "Hawaian",
+        "ingredients": "tomato sauce, cheese, basil, ham, pineapple",
+        "prix": 18,
+        "img": "/src/assets/hawain-pizza.jpg"
+    },
+    {
+        "name": "Prociuto",
+        "ingredients": "tomato sauce, cheese, basil, ham",
+        "prix": 16,
+        "img": "/src/assets/prosciutto-pizza.jpg"
+    }
+]
