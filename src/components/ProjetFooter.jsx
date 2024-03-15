@@ -4,14 +4,14 @@ const ProjetFooter = () => {
 
     return (
         <div className='w-full h-[15%] bg-red-700 flex justify-center items-center flex-col'>
-        
+
             <div className='w-full h-[85%] flex justify-evenly items-center'>
 
-                <img src={"/src/assets/facebook.png"} className='w-[30px] h-[30px]'/>
+                <img src={new URL(`../assets/facebook.png`, import.meta.url).href} className='w-[30px] h-[30px]'/>
 
-                <img src={"/src/assets/linkedin.png"} className='w-[30px] h-[30px]'/>
+                <img src={new URL(`../assets/linkedin.png`, import.meta.url).href} className='w-[30px] h-[30px]'/>
 
-                <img src={"/src/assets/instagram.png"} className='w-[30px] h-[30px]'/>
+                <img src={new URL(`../assets/instagram.png`, import.meta.url).href} className='w-[30px] h-[30px]'/>
 
             </div>
 

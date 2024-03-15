@@ -5,6 +5,7 @@ import ProjetHeader from './ProjetHeader';
 import ProjetFooter from './ProjetFooter';
 
 import data from './../data.json'
+
 import { Link } from 'react-router-dom';
 
 const ProjetDetails = () => {
@@ -21,7 +22,7 @@ const ProjetDetails = () => {
 
                             <Link to={'/Projet-Pizza'}>
 
-                                <img src={element.img} alt="" className='w-[400px] h-[400px] rounded-[50%] hover:brightness-110'/>
+                                <img src={new URL(`../assets/${element.img}`, import.meta.url).href} className='w-[400px] h-[400px] rounded-[50%] hover:brightness-110'/>
 
                             </Link>
 

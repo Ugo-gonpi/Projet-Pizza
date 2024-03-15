@@ -17,6 +17,8 @@ import Projet from './components/Projet';
 
 import ProjetDetails from './components/ProjetDetails'
 
+import ProjetChecout from "./components/ProjetCheckout"
+
 function App() {
 
   const router = createBrowserRouter([
@@ -27,6 +29,10 @@ function App() {
     {
       path: "/details",
       element: <ProjetDetails/>
+    },
+    {
+      path: "/checkout",
+      element: <ProjetChecout/>
     }
   ])
 

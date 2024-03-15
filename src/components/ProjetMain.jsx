@@ -19,7 +19,7 @@ const ProjetMain = () => {
                     <div key={key} className='w-[270px] h-[220px] bg-orange-400 rounded-[10px] flex items-center flex-col shadow-2xl'>
 
                         <Link className='w-full h-[100px] flex justify-center items-center mt-[5px]' to={"/details"}>
-                            <img src={element.img} alt="" className='w-[70%] h-full rounded-[50%] hover:brightness-110'/>
+                            <img src={new URL(`../assets/${element.img}`, import.meta.url).href} alt="" className='w-[70%] h-full rounded-[50%] hover:brightness-110'/>
                         </Link>
 
                         <p className='text-white font-bold mt-[5px] italic text-[24px]'>{element.name}</p>
