@@ -16,13 +16,13 @@ const ProjetDetails = () => {
 
     return (
         <div className='w-screen h-screen'>
-
             <ProjetHeader/>
 
-            <div className='w-full h-[75%] bg-white flex justify-center items-center'>
+            <div className='w-full h-[75%] bg-[url("./assets/bg-pizza.jpg")] bg-no-repeat bg-cover flex justify-center items-center'>
+
                 <div className='w-[50%] h-full flex justify-center items-center flex-col'>
 
-                    <p className='text-black text-[40px] mb-[10px] font-bold underline italic'>{data[id].name}</p>
+                    <p className='text-white text-[45px] mb-[10px] font-bold underline italic'>{data[id].name}</p>
 
                     <Link to={'/Projet-Pizza'}>
 
@@ -40,7 +40,7 @@ const ProjetDetails = () => {
                                 
                         <p className='text-black italic'>{data[id].ingredients}</p>
                                 
-                        <button className='text-white bg-green-600 w-[100px] h-[30px] mt-[5px] rounded-[5px] hover:bg-green-500 italic' onClick={(e)=> {dispatch(addToCart(e.target.value))}}>Add to cart</button>
+                        <button className='text-white bg-green-600 w-[100px] h-[30px] mt-[5px] rounded-[5px] hover:bg-green-500 italic'>Add to cart</button>
                                 
                     </div>
 

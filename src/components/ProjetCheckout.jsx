@@ -5,9 +5,9 @@ import ProjetHeader from './ProjetHeader';
 const ProjetCheckout = () => {
     
     return (
-        <div className='w-screen h-screen bg-orange-500'>
+        <div className='w-screen h-screen bg-[url("./assets/bg-pizza.jpg")] bg-no-repeat bg-cover'>
             <ProjetHeader/>
-            
+
         </div>
     );
 }
