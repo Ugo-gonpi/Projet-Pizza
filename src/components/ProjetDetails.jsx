@@ -8,41 +8,46 @@ import data from './../data.json'
 
 import { Link } from 'react-router-dom';
 
+import { useParams } from 'react-router-dom';
+
 const ProjetDetails = () => {
+
+    const {id} = useParams();
+
     return (
         <div className='w-screen h-screen'>
+
             <ProjetHeader/>
 
-            {data.map((element, key)=> {
-                return(
-                    <div className='w-full h-[75%] bg-white flex justify-center items-center' key={key}>
-                        <div className='w-[50%] h-full flex justify-center items-center flex-col'>
+            <div className='w-full h-[75%] bg-white flex justify-center items-center'>
+                <div className='w-[50%] h-full flex justify-center items-center flex-col'>
 
-                            <p className='text-black text-[40px] mb-[10px] font-bold underline italic'>{element.name}</p>
+                    <p className='text-black text-[40px] mb-[10px] font-bold underline italic'>{data[id].name}</p>
 
-                            <Link to={'/Projet-Pizza'}>
+                    <Link to={'/Projet-Pizza'}>
 
-                                <img src={new URL(`../assets/${element.img}`, import.meta.url).href} className='w-[400px] h-[400px] rounded-[50%] hover:brightness-110'/>
+                        <img src={new URL(`../assets/${data[id].img}`, import.meta.url).href} className='w-[400px] h-[400px] rounded-[50%] hover:brightness-110'/>
 
-                            </Link>
+                    </Link>
 
-                        </div>
+                </div>
 
-                        <div className='w-[50%] h-full flex justify-center items-center flex-col'>
-                            <div className='border-2 border-black flex justify-center items-center flex-col w-[300px] h-[150px] text-center bg-orange-500'>
+                <div className='w-[50%] h-full flex justify-center items-center flex-col'>
 
-                                <p className='text-black text-[25px] font-bold'>Ingredients: </p>
+                    <div className='border-2 border-black flex justify-center items-center flex-col w-[300px] h-[150px] text-center bg-orange-500'>
+
+                        <p className='text-black text-[25px] font-bold'>Ingredients: </p>
                                 
-                                <p className='text-black italic'>{element.ingredients}</p>
+                        <p className='text-black italic'>{data[id].ingredients}</p>
                                 
-                                <button className='text-white bg-green-600 w-[100px] h-[30px] mt-[5px] rounded-[5px] hover:bg-green-500 italic' onClick={(e)=> {dispatch(addToCart(e.target.value))}}>Add to cart</button>
+                        <button className='text-white bg-green-600 w-[100px] h-[30px] mt-[5px] rounded-[5px] hover:bg-green-500 italic' onClick={(e)=> {dispatch(addToCart(e.target.value))}}>Add to cart</button>
                                 
-                            </div>
-                        </div>
                     </div>
-                )
-            })}
-            
+
+                </div>
+
+            </div>
+
             <ProjetFooter/>
         </div>
     );

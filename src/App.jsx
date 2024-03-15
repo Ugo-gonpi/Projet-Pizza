@@ -27,7 +27,7 @@ function App() {
       element: <Projet/>,
     },
     {
-      path: "/details",
+      path: "/details/:id",
       element: <ProjetDetails/>
     },
     {

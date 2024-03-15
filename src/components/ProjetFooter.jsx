@@ -17,7 +17,7 @@ const ProjetFooter = () => {
 
             <div className='w-full flex justify-center items-center flex-col'>
 
-                <p>Tous droit et honneur réserver à:</p>
+                <p>Tous droits et honneurs réserver pour:</p>
 
                 <p>Ugo Gonzalez Pinto ©</p>
 
